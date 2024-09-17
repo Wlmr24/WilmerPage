@@ -186,7 +186,26 @@ section {
         margin: 1rem 1.5rem;
     }
     .main {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
 }
+
+
+.mains {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Tres columnas iguales */
+    column-gap: 1rem; /* Espacio entre columnas */
+    justify-content: space-between;
+    align-items: start; /* Ajusta si es necesario */
+    margin: 5rem auto;
+ }
+
+ .cards {
+   background: #f9f9f900;
+   border: 0.5px solid #06c3fd2d;
+   border-radius: 8px;
+   padding: 20px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   box-sizing: border-box;
+ }
