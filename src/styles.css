@@ -25,7 +25,7 @@ header {
 }
 
 .logo {
-    font-size: 1.3rem;
+    font-size: 2.0rem;
     font-weight: 800;
 }
 
@@ -37,7 +37,7 @@ header {
 nav a {
     color: #113D6B;
     text-decoration: none;
-    font-size: .97rem;
+    font-size: 1.10rem;
     font-weight: 600;
     letter-spacing: .7px;
     padding: 1rem;
@@ -63,8 +63,19 @@ nav a:hover {
 /* Nav */
 
 section {
-    margin: 2rem 8.5rem;
-    ;
+    margin: 2rem 6.0rem;
+    text-align:justify; /* Centra el texto horizontalmente */
+    padding: 2rem;
+    box-sizing: border-box; /* Asegura que el padding esté incluido en el ancho total */;
+}
+
+.image-container {
+    text-align:center /* Alinea el contenido del div a la derecha */
+}
+
+img {
+    max-width: 100%; /* O puedes usar max-width: 100%; para que sea responsivo */
+    height: auto; /* Mantiene la proporción de la imagen */
 }
 
 .main {
@@ -90,7 +101,7 @@ section {
     display: flex;
     flex-wrap: wrap;
     gap: 1.4rem;
-    margin-top: 1.7rem;
+    margin-top: 1rem;
 }
 
 .social a {
@@ -131,6 +142,14 @@ section {
     background-position: 0 -75px;
     background-position: 0px -74px;
 }
+
+@media (max-width: 768px) {
+    section {
+      margin: 1rem 2rem; /* Ajusta los márgenes para pantallas más pequeñas */
+    }
+}
+
+
 @media only screen and (max-width: 1024px) {
     section {
         margin: 2rem 2.5rem;
